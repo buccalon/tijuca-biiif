@@ -1,0 +1,23 @@
+[[headers]]
+  for = "/*"
+[headers.values]
+  Access-Control-Allow-Origin = "*"
+  cache-control = '''
+	max-age=86400,
+	public'''
+
+[build]
+  base = ""
+  publish = "collection"
+  command = "CI= npm run build"
+  # Ignore dependabot PRs for deploy previews
+  ignore = "./netlify-ignore.sh"
+
+[build.environment]
+  SHOW_NETLIFY_BADGE = "true"
+  NODE_VERSION = "14"
+
+# redirect to index.json
+[[redirects]]
+  from = "/*"
+  to = "/index.json"
