@@ -1,4 +1,3 @@
 manifests:
   - id: https://imaginerio-images.s3.us-east-1.amazonaws.com/iiif/0072430cx007-11/manifest.json
-  label: tijuca do imaginerio
-  thumbnail: https://imaginerio-images.s3.us-east-1.amazonaws.com/iiif/0072430cx007-11/full/591,473/0/default.jpg 
+  
